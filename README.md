@@ -18,3 +18,17 @@ A real-time monitoring dashboard for locomotive parameters such as temperature, 
 Open: http://127.0.0.1:5000/
 pip install -r requirements.txt
 python app.py
+
+Project Structure
+smart-locomotive-monitoring/
+│── app.py
+│── database.db
+│── requirements.txt
+│── README.md
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│
+├── static/
+│   ├── style.css
