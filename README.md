@@ -13,13 +13,7 @@ A real-time monitoring dashboard for locomotive parameters such as temperature, 
 - JavaScript (Fetch API)
 - Chart.js
 
-##  Run Locally
-```bash
-Open: http://127.0.0.1:5000/
-pip install -r requirements.txt
-python app.py
-
-Project Structure
+  ## Project Structure
 smart-locomotive-monitoring/
 │── app.py
 │── database.db
@@ -32,3 +26,11 @@ smart-locomotive-monitoring/
 │
 ├── static/
 │   ├── style.css
+
+##  Run Locally
+bash
+Open: http://127.0.0.1:5000/
+pip install -r requirements.txt
+python app.py
+
+
