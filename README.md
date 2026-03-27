@@ -15,5 +15,6 @@ A real-time monitoring dashboard for locomotive parameters such as temperature, 
 
 ##  Run Locally
 ```bash
+Open: http://127.0.0.1:5000/
 pip install -r requirements.txt
 python app.py
