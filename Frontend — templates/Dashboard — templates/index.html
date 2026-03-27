@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<canvas id="chart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+let chart;
+
+async function fetchData() {
+    await fetch('/simulate'); // generate new data
+
+    const res = await fetch('/data');
+    const data = await res.json();
+
+    const labels = data.map(d => d.time);
+    const temp = data.map(d => d.temp);
+    const fuel = data.map(d => d.fuel);
+    const vibration = data.map(d => d.vibration);
+
+    if (chart) chart.destroy();
+
+    chart = new Chart(document.getElementById('chart'), {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                { label: 'Temperature', data: temp },
+                { label: 'Fuel Level', data: fuel },
+                { label: 'Vibration', data: vibration }
+            ]
+        }
+    });
+}
+
+setInterval(fetchData, 3000);
+fetchData();
+</script>
+
+{% endblock %}
