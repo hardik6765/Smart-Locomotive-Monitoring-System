@@ -23,19 +23,15 @@ smart-locomotive-monitoring
 
 │── README.md
 
-│
+│├── templates/
 
-├── templates/
+│├── base.html
 
-│   ├── base.html
+│├── index.html
 
-│   ├── index.html
+│├── static/
 
-│
-
-├── static/
-
-│   ├── style.css
+│├── style.css
 
 ##  Run Locally
 
