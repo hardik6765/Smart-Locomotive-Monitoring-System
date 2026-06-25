@@ -16,6 +16,7 @@ A real-time monitoring dashboard for locomotive parameters such as temperature, 
 ## Project Structure
 smart-locomotive-monitoring
 │── app.py
+
 │── database.db
 │── requirements.txt
 │── README.md
