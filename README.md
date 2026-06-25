@@ -18,14 +18,23 @@ smart-locomotive-monitoring
 │── app.py
 
 │── database.db
+
 │── requirements.txt
+
 │── README.md
+
 │
+
 ├── templates/
+
 │   ├── base.html
+
 │   ├── index.html
+
 │
+
 ├── static/
+
 │   ├── style.css
 
 ##  Run Locally
